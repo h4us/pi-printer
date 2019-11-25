@@ -1,0 +1,11 @@
+[Unit]
+Description=Transbooks 2019 print server app
+
+[Service]
+User=pi
+ExecStart=/etc/systemd/system/transbooks.sh
+Restart=always
+Type=simple
+
+[Install]
+WantedBy = multi-user.target
